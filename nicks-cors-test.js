@@ -4,13 +4,12 @@ function main()
     console.log("ajax request to the resource which will require cors enabled");
     $.ajax
     ({
-        dataType: "html",
-        url: "http://localhost:80",
+        dataType: "json",
+        url: "https://api.github.com",
         success: function(data) 
         {
             console.log("log response on success");
             console.log(data);
         }
     });
-
 }
