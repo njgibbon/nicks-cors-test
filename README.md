@@ -31,6 +31,6 @@ You can use this simple tool to test making CORS requests and examine the outcom
 * Download the files and open the HTML page in a browser. You will be faced with a blank screen and nothing else.
 * Open the browser tools: Right-click > Inspect > Console.
 * Open the JS file in a text editor.
-* Adjust the ‘url’ values depending on the resource you are trying to obtain. We can see that ‘https://google.com’ has been blocked due to the CORS policy.
+* Adjust the ‘url’ values depending on the resource you are trying to obtain. We can see that `https://google.com` has been blocked due to the CORS policy.
 * Adjust and save the JS file like so: `url: "https://api.github.com",`.
 * Refresh the browser. And we see that the github api has wildcard CORS enabled.
