@@ -14,11 +14,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
 The header which is provided as the argument is the ‘Origin’. This is set by the User-Agent (the thing that makes the request) and can not be overridden (security enforced).
 
-The server with the resource uses the ‘Access-Control-Allow-Origin’ header to whitelist particular domains or allow requests from all origins using the wildcard:
-
+The server with the resource uses the `Access-Control-Allow-Origin` header to allowlist particular domains or allow requests from all origins using the wildcard:
 ```
 Access-Control-Allow-Origin: *
 ```
+
 
 # Tool
 You can use this simple tool to test making CORS requests and examine the outcome.
@@ -28,9 +28,9 @@ You can use this simple tool to test making CORS requests and examine the outcom
 
 
 # Guide
-* Download the files and open the HTML page in a browser. You will be faced with a blank screen and nothing else.
-* Open the browser tools: Right-click > Inspect > Console.
-* Open the JS file in a text editor.
-* Adjust the ‘url’ values depending on the resource you are trying to obtain. We can see that `https://google.com` has been blocked due to the CORS policy.
-* Adjust and save the JS file like so: `url: "https://api.github.com",`.
-* Refresh the browser. And we see that the github api has wildcard CORS enabled.
+* Download the files and open `index.html` in a browser. You will be faced with a blank screen and nothing else.
+* Open the browser tools: e.g **Right-click** > **Inspect** > **Console**.
+* Open `main.js` file in a text editor.
+* Adjust the `url` value depending on the resource you want to check, save `main.js` and refresh the browser. 
+    * Try `https://google.com` and you will see it has been blocked due to CORS.
+    * Try `https://api.github.com` and you will see it is not blocked and the content will be output.
